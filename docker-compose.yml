@@ -1,0 +1,11 @@
+
+version: '3'
+
+services:
+  php:
+    container_name: "php"
+    restart: always
+    build:
+      context: ./Docker/Php8
+    volumes:
+      - ./:/var/www
